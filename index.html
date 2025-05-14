@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>বহুরূপী | মজার স্ট্যাটাস ও গল্প</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdf6e3;
+      color: #333;
+    }
+    header {
+      background-color: #ff5722;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #ffc107;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+    }
+    .post {
+      background: white;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .comments {
+      margin-top: 15px;
+      padding-top: 10px;
+      border-top: 1px solid #ccc;
+    }
+    .comments textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+    .comments button {
+      padding: 8px 15px;
+      background-color: #4caf50;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #language-toggle {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      background: #009688;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #ff5722;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <button id="language-toggle">English</button>
+  <header>
+    <h1>বহুরূপী</h1>
+    <p>মজার স্ট্যাটাস ও বাস্তব জীবনের গল্প</p>
+  </header>
+  <nav>
+    <a href="#">হোম</a>
+    <a href="#about">আমাদের সম্পর্কে</a>
+    <a href="#contact">যোগাযোগ</a>
+    <a href="#admin">এডমিন</a>
+  </nav>
+  <main>
+    <section class="post">
+      <h2>পাত্র চাই - একটু পাগল হইলেই হবে!</h2>
+      <p>বয়স ২৫+, মাথায় কিছু কম, কিন্তু হৃদয়ে ভালোবাসা বেশি — এমন পাত্র চাই।</p>
+      <div class="comments">
+        <textarea placeholder="আপনার মন্তব্য লিখুন..."></textarea>
+        <button>পাঠান</button>
+      </div>
+    </section>
+    <section class="post">
+      <h2>বাসায় ঢুকেই মা বলল: আবার কী করছিস?</h2>
+      <p>আমি বললাম: কিছু না মা, শুধু একটা নতুন পৃথিবী তৈরি করছি স্ট্যাটাসে!</p>
+      <div class="comments">
+        <textarea placeholder="আপনার মন্তব্য লিখুন..."></textarea>
+        <button>পাঠান</button>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>আমাদের সম্পর্কে</h2>
+      <p>"বহুরূপী" একটি ফেসবুক ভিত্তিক প্ল্যাটফর্ম, যেখানে আমরা প্রতিদিনের জীবনের হাসির ও অনুভূতির গল্প শেয়ার করি।</p>
+    </section>
+
+    <section id="contact">
+      <h2>যোগাযোগ করুন</h2>
+      <form>
+        <input type="text" placeholder="আপনার নাম" required>
+        <input type="email" placeholder="আপনার ইমেইল" required>
+        <textarea placeholder="আপনার বার্তা" rows="4" required></textarea>
+        <button type="submit">পাঠান</button>
+      </form>
+    </section>
+
+    <section id="admin">
+      <h2>এডমিন প্যানেল (ডেমো)</h2>
+      <p>এখানে আপনি নতুন স্ট্যাটাস যোগ করতে পারবেন।</p>
+      <form>
+        <input type="text" placeholder="পোস্ট শিরোনাম" required>
+        <textarea placeholder="পোস্ট কনটেন্ট" rows="4" required></textarea>
+        <button type="submit">যোগ করুন</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>© ২০২৫ বহুরূপী | তৈরি করেছেন MJ Mizan</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('language-toggle');
+    toggleBtn.addEventListener('click', () => {
+      alert('ইংরেজি ভার্সনের কাজ প্রক্রিয়াধীন...');
+    });
+  </script>
+</body>
+</html>
